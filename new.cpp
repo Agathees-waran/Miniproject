@@ -10,3 +10,8 @@ int c=a+b;
 void sum(){
     cout<<"output:"<<c;
 }
+void add(){
+    int a=10;
+    int b=12;
+    return a+b;
+}
