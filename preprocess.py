@@ -5,3 +5,5 @@ y=x-y
 x=x-y
 print("x=10",x)
 print("y=",y)
+print("Addes")
+print("hello world")
