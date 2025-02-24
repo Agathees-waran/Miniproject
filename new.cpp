@@ -15,4 +15,3 @@ void add(){
     int b=12;
     return a+b;
 }
-return 8+5;
