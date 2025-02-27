@@ -1,0 +1,32 @@
+import pandas as pd
+import random
+
+# Sample equipment data
+equipment_types = ["Tractor", "Harvester", "Rotavator", "Sprayer", "Tiller", "Harrow", "Mini Tractor", "Chaff Cutter", "Loader"]
+equipment_names = {
+    "Tractor": ["John Deere 5050D", "Mahindra Arjun 605", "Swaraj 744 XT", "Eicher 551"],
+    "Harvester": ["Kubota Harvester DC-68G", "Preet 987 Harvester", "Mahindra Arjun Nova"],
+    "Rotavator": ["Shaktiman Rotavator", "Fieldking Rotavator", "Maschio Gaspardo Rotavator"],
+    "Sprayer": ["KisanKraft Sprayer KK-PSP", "Neptune Knapsack Sprayer"],
+    "Tiller": ["Honda Power Tiller FJ500", "VST Shakti 135 DI"],
+    "Harrow": ["Fieldking Disc Harrow", "Landforce Harrow"],
+    "Mini Tractor": ["Greaves Cotton Mini Tractor", "Eicher Mini 188"],
+    "Chaff Cutter": ["Bajaj Chaff Cutter", "Mahindra Chaff Cutter"],
+    "Loader": ["L&T Backhoe Loader", "JCB 3DX Loader"]
+}
+locations = ["Nagapattinam", "Chennai", "Madurai", "Coimbatore", "Salem", "Tiruchirappalli", "Erode", "Thanjavur", "Villupuram", "Vellore"]
+availability = ["Available", "Booked"]
+
+# List to store the data
+data = []
+for renter_id in range(101, 601):
+    name = f"Renter {renter_id}"
+    eq_type = random.choice(equipment_types)
+    eq_name = random.choice(equipment_names[eq_type])
+    price = random.randint(1000, 6000)  # Random rental price in INR
+    location = random.choice(locations)
+    status = random.choice(availability)
+    data.append([renter_id, name, eq_name, eq_type, price, location, status])
+
+# Create DataFrame
+columns = ["Renter ID", "Renter Name", "
