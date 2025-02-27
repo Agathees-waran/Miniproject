@@ -1,18 +1,22 @@
 #include <iostream>
 using namespace std;
-int main(){
-    cout<<"helloworld";
-    return 0;
-}
-int a=10;
-int b=12;
-int c=a+b;
 void sum(){
-    cout<<"output:"<<c;
-}
+    int a=10;
+    int b=12;
+    int c=a+b;
+    cout<<"output:"<<c;}
 void add(){
     int a=10;
     int b=12;
-    return a+b;
+    cout<<a+b;
 }
-return 8+5;
+int main(){
+    cout<<"helloworld\n";
+    int c=8+5;
+    cout<<c<<"\n";
+    add();
+    cout<<"\n";
+    sum();
+    return 0;
+}
+   
